@@ -51,9 +51,7 @@ export async function POST(req: Request) {
       style: "vivid",
     };
     const created_at = new Date().toISOString();
-    console.log("gen_",111111)
     const res = await client.images.generate(llm_params);
-    console.log("gen_",22222)
     const datas = res.data;
     if (!datas || datas?.length===0) {
       return respErr("generate wallpaper failed");
@@ -63,7 +61,6 @@ export async function POST(req: Request) {
       return respErr("generate wallpaper failed");
     }
 
-    console.log("gen_",33333)
     console.log("gen_raw_img_url",raw_img_url)
     const img_name = encodeURIComponent(description);
     const s3_img = await downloadAndUploadImage(
@@ -73,7 +70,6 @@ export async function POST(req: Request) {
     );
 
     const img_url = s3_img.Location;
-    console.log("gen_",44444)
     const wallpaper: Wallpaper = {
       user_email: user_email,
       img_description: description,

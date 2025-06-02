@@ -8,6 +8,9 @@ const nextConfig = {
       "aiwallpaper-flying1101.s3.ap-northeast-1.amazonaws.com"
     ],
   },
+  env: {
+    AWS_AK: process.env.AWS_AK,
+  },
 };
 
 module.exports = nextConfig;

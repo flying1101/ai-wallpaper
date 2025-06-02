@@ -3,10 +3,11 @@ import { Readable } from "stream";
 import axios from "axios";
 import fs from "fs";
 
+console.log("process.env.AWS_AK=", process.env.AWS_AK)
+console.log("process.env.AWS_SK=", process.env.AWS_SK)
 AWS.config.update({
-
-  // accessKeyId: process.env.AWS_AK,
-  // secretAccessKey: process.env.AWS_SK,
+  accessKeyId: process.env.AWS_AK,
+  secretAccessKey: process.env.AWS_AS,
   region:"ap-northeast-1"
 });
 
