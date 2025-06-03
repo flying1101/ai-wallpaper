@@ -51,17 +51,17 @@ export async function POST(req: Request) {
       style: "vivid",
     };
     const created_at = new Date().toISOString();
-    // const res = await client.images.generate(llm_params);
-    // const datas = res.data;
-    // if (!datas || datas?.length===0) {
-    //   return respErr("generate wallpaper failed");
-    // }
-    // const raw_img_url = datas[0].url || "";
-    // if (!raw_img_url) {
-    //   return respErr("generate wallpaper failed");
-    // }
+    const res = await client.images.generate(llm_params);
+    const datas = res.data;
+    if (!datas || datas?.length===0) {
+      return respErr("generate wallpaper failed");
+    }
+    const raw_img_url = datas[0].url || "";
+    if (!raw_img_url) {
+      return respErr("generate wallpaper failed");
+    }
 
-    const raw_img_url = "http://gips3.baidu.com/it/u=3886271102,3123389489&fm=3028&app=3028&f=JPEG&fmt=auto?w=1280&h=960";
+    // const raw_img_url = "http://gips3.baidu.com/it/u=3886271102,3123389489&fm=3028&app=3028&f=JPEG&fmt=auto?w=1280&h=960";
     console.log("gen_raw_img_url",raw_img_url)
     const img_name = encodeURIComponent(description);
     const s3_img = await downloadAndUploadImage(
