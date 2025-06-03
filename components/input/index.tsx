@@ -45,6 +45,8 @@ export default function ({ setWallpapers }: Props) {
       });
       setLoading(false);
         
+      console.log("gen wallpaper status", resp.status);
+      console.log("gen wallpaper ok", resp.ok);
       if (resp.status === 401) {
         router.push("/sign-in");
         return;

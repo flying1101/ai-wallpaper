@@ -20,7 +20,7 @@ export default function () {
       const uri = "/api/get-wallpapers";
       const params = {
         page: page,
-        limit: 50,
+        limit: 20,
       };
 
       setLoading(true);
@@ -30,16 +30,12 @@ export default function () {
       });
       setLoading(false);
 
-      if (resp.ok) {
-        const res = await resp.json();
-        console.log("get wallpapers result: ", res);
-        if (res.data) {
-          setWallpapers(res.data);
-          return;
-        }
+      const {code, message, data } = await resp.json();
+      if (code === 0) {
+          setWallpapers(data || {});
+      } else {
+        toast.error(message);
       }
-
-      toast.error("get wallpapers failed");
     } catch (e) {
       console.log("get wallpapers failed: ", e);
       toast.error("get wallpapers failed");

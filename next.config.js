@@ -8,8 +8,10 @@ const nextConfig = {
       "aiwallpaper-flying1101.s3.ap-northeast-1.amazonaws.com"
     ],
   },
-  env: {
-    AWS_AK: process.env.AWS_AK,
+  roductionBrowserSourceMaps: true, // For browser source maps
+  // For server-side source maps (Next.js 13+)
+  experimental: {
+    serverSourceMaps: true,
   },
 };
 

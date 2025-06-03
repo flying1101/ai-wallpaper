@@ -8,6 +8,7 @@ type Props = {
 
 export default async function ({ params }: { params: Promise<Props> }) {
   try {
+    
     const { session_id }= await params;
     handleOrderSession(session_id);
   } catch (e) {
