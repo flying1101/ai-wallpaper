@@ -4,6 +4,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 export default function Generator() {
+  
   const [description, setDescription] = useState("");
   const [loading, setLoading] = useState(false);
 
