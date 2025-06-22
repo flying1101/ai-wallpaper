@@ -3,76 +3,39 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "AI Wallpaper",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "AI Wallpaper"
       },
       "url": "/"
     },
     "nav": {
       "items": [
-        {
-          "title": "Features",
-          "url": "/#feature",
-          "icon": "RiSparkling2Line"
-        },
+   
         {
           "title": "Pricing",
           "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
-        },
-        {
-          "title": "Showcase",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
+          "icon":"MdPayment"
         }
       ]
     },
     "buttons": [
-      {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "variant": "link",
-        "icon": "RiArrowRightUpLine"
-      }
+     
     ],
     "show_sign": true,
-    "show_theme": true,
+    "show_theme": false,
     "show_locale": true
   },
   "hero": {
-    "title": "Ship Any AI Startups in hours, not days",
-    "highlight_text": "Ship Any",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
-    "announcement": {
-      "label": "2025",
-      "title": "🎉 Happy New Year",
-      "url": "/#pricing"
-    },
-    "tip": "🎁 50% off before 2025",
-    "buttons": [
-      {
-        "title": "Get Started",
-        "icon": "RiFlashlightFill",
-        "url": "/#pricing",
-        "target": "_self",
-        "variant": "default"
-      },
-      {
-        "title": "Join Discord",
-        "icon": "RiDiscordFill",
-        "url": "https://discord.gg/HQNnrzjZQS",
-        "target": "_blank",
-        "variant": "outline"
-      }
-    ],
-    "show_happy_users": true,
+    "title": "AI Wallpaper Generator",
+    "highlight_text": "AI Wallpaper",
+    "description": "Create stunning, unique wallpapers with artificial intelligence.<br/>Transform your devices with personalized AI-generated artwork.",
+    "show_happy_users": false,
     "show_badge": false
   },
   "branding": {
-    "title": "ShipAny is built on the shoulders of giants",
+    "title": "AI Wallpaper is powered by cutting-edge technology",
     "items": [
       {
         "title": "Next.js",
@@ -113,56 +76,56 @@
   },
   "introduce": {
     "name": "introduce",
-    "title": "What is ShipAny",
+    "title": "What is AI Wallpaper Generator",
     "label": "Introduce",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    "description": "AI Wallpaper Generator is an advanced platform that uses artificial intelligence to create unique, high-quality wallpapers for all your devices.",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
-        "icon": "RiNextjsFill"
+        "title": "AI-Powered Generation",
+        "description": "Create unique wallpapers using advanced AI models that understand your preferences and style.",
+        "icon": "RiRobot2Line"
       },
       {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
-        "icon": "RiDatabase2Line"
+        "title": "Multiple Resolutions",
+        "description": "Generate wallpapers for phones, tablets, desktops, and custom resolutions to fit any device.",
+        "icon": "RiSmartphoneLine"
       },
       {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
-        "icon": "RiCloudyFill"
+        "title": "Instant Creation",
+        "description": "Get beautiful wallpapers in seconds with our optimized AI generation process.",
+        "icon": "RiTimeLine"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "Why Choose ShipAny",
+    "title": "Why Choose AI Wallpaper Generator",
     "label": "Benefits",
-    "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    "description": "Experience the perfect blend of creativity and technology with our AI-powered wallpaper generation platform.",
     "items": [
       {
-        "title": "Complete Framework",
-        "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
-        "icon": "RiNextjsFill",
+        "title": "Unlimited Creativity",
+        "description": "Generate endless unique wallpapers with AI that understands artistic styles, colors, and themes.",
+        "icon": "RiPaletteLine",
         "image": {
           "src": "/imgs/features/2.png"
         }
       },
       {
-        "title": "Rich Templates Library",
-        "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
-        "icon": "RiClapperboardAiLine",
+        "title": "Personalized Experience",
+        "description": "Create wallpapers that match your mood, style, and preferences with intelligent AI suggestions.",
+        "icon": "RiUserHeartLine",
         "image": {
           "src": "/imgs/features/3.png"
         }
       },
       {
-        "title": "Technical Guidance",
-        "description": "Get dedicated support and join our developer community to ensure your successful launch.",
-        "icon": "RiCodeFill",
+        "title": "Professional Quality",
+        "description": "Get high-resolution wallpapers suitable for personal use or commercial projects with proper licensing.",
+        "icon": "RiImageLine",
         "image": {
           "src": "/imgs/features/4.png"
         }
@@ -171,8 +134,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Launch with ShipAny",
-    "description": "Get your AI SaaS startup running in three simple steps:",
+    "title": "How to Create Your Perfect Wallpaper",
+    "description": "Generate stunning AI wallpapers in four simple steps:",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -180,29 +143,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Get ShipAny",
-        "description": "Buy ShipAny with a one-time payment. Check your email for the code and documentation.",
+        "title": "Describe Your Vision",
+        "description": "Tell our AI what you want - describe the style, colors, mood, or theme for your perfect wallpaper.",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
-        "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of ShipAny. Start building your AI SaaS startup.",
+        "title": "Choose Your Style",
+        "description": "Select from various artistic styles including abstract, nature, minimalist, artistic, or custom themes.",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "Customize Your Project",
-        "description": "Modify the template with your data and contents. Specific AI functionality needs.",
+        "title": "Pick Your Resolution",
+        "description": "Choose the perfect resolution for your device - from mobile phones to 4K desktop displays.",
         "image": {
           "src": "/imgs/features/7.png"
         }
       },
       {
-        "title": "Deploy to Production",
-        "description": "Deploy your project to production with a few steps and start serving customers immediately.",
+        "title": "Download & Enjoy",
+        "description": "Download your AI-generated wallpaper in high quality and set it as your device background.",
         "image": {
           "src": "/imgs/features/8.png"
         }
@@ -211,116 +174,118 @@
   },
   "feature": {
     "name": "feature",
-    "title": "Key Features of ShipAny",
-    "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    "title": "Key Features of AI Wallpaper Generator",
+    "description": "Everything you need to create stunning, personalized wallpapers with artificial intelligence.",
     "items": [
       {
-        "title": "Next.js Boilerplate",
-        "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-        "icon": "RiNextjsFill"
-      },
-      {
-        "title": "Authentication & Payments",
-        "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-        "icon": "RiKey2Fill"
-      },
-      {
-        "title": "Data Infrastructure",
-        "description": "Built-in Supabase integration for reliable and scalable data storage.",
-        "icon": "RiDatabase2Line"
-      },
-      {
-        "title": "One-Click Deployment",
-        "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-        "icon": "RiCloudy2Fill"
-      },
-      {
-        "title": "Business Analytics",
-        "description": "Integrated Google Analytics and Search Console for tracking growth.",
-        "icon": "RiBarChart2Line"
-      },
-      {
-        "title": "AI-Ready Infrastructure",
-        "description": "Pre-configured AI integration with built-in credits system and API sales.",
+        "title": "AI-Powered Generation",
+        "description": "Advanced AI models create unique, high-quality wallpapers based on your descriptions and preferences.",
         "icon": "RiRobot2Line"
+      },
+      {
+        "title": "Multiple Resolutions",
+        "description": "Support for all device sizes including phones, tablets, desktops, and custom resolutions.",
+        "icon": "RiSmartphoneLine"
+      },
+      {
+        "title": "Style Variety",
+        "description": "Choose from abstract art, nature scenes, minimalist designs, artistic patterns, and custom themes.",
+        "icon": "RiPaletteLine"
+      },
+      {
+        "title": "Instant Generation",
+        "description": "Get your wallpapers in seconds with our optimized AI processing and delivery system.",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "Commercial Licensing",
+        "description": "Use generated wallpapers for commercial projects with proper licensing and usage rights.",
+        "icon": "RiCopyrightLine"
+      },
+      {
+        "title": "User-Friendly Interface",
+        "description": "Intuitive design makes it easy to create, customize, and download your perfect wallpapers.",
+        "icon": "RiLayoutLine"
       }
     ]
   },
   "stats": {
     "name": "stats",
     "label": "Stats",
-    "title": "People Love ShipAny",
-    "description": "for it's easy to use and fast to ship.",
+    "title": "People Love AI Wallpaper Generator",
+    "description": "for its creativity and ease of use.",
     "icon": "FaRegHeart",
     "items": [
       {
         "title": "Trusted by",
-        "label": "99+",
-        "description": "Customers"
+        "label": "10K+",
+        "description": "Users"
       },
       {
-        "title": "Built in",
-        "label": "20+",
-        "description": "Components"
+        "title": "Generated",
+        "label": "50K+",
+        "description": "Wallpapers"
       },
       {
-        "title": "Ship Fast in",
-        "label": "5",
-        "description": "Minutes"
+        "title": "Create in",
+        "label": "30",
+        "description": "Seconds"
       }
     ]
   },
   "testimonial": {
+    "disabled": true,
     "name": "testimonial",
     "label": "Testimonial",
-    "title": "What Users Say About ShipAny",
-    "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
+    "title": "What Users Say About AI Wallpaper Generator",
+    "description": "Hear from users who have transformed their devices with AI-generated wallpapers.",
     "icon": "GoThumbsup",
     "items": [
       {
         "title": "David Chen",
-        "label": "Founder of AIWallpaper.shop",
-        "description": "ShipAny saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
+        "label": "Designer",
+        "description": "AI Wallpaper Generator is incredible! I can create unique wallpapers that perfectly match my mood and style. The quality is amazing and the process is so simple.",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
         "title": "Rachel Kim",
-        "label": "CTO at HeyBeauty.ai",
-        "description": "The pre-built AI infrastructure is a game-changer. We didn't have to worry about architecture - just focused on our AI beauty tech and went live fast.",
+        "label": "Tech Enthusiast",
+        "description": "Finally, a wallpaper generator that understands what I want! The AI creates beautiful, personalized wallpapers that make my devices look stunning.",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
         "title": "Marcus Thompson",
-        "label": "Solo Developer",
-        "description": "As a solo developer, ShipAny gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
+        "label": "Creative Professional",
+        "description": "As a designer, I love having access to unique wallpapers. The AI generates creative designs that inspire my own work. Highly recommended!",
         "image": {
           "src": "/imgs/users/3.png"
         }
       },
       {
         "title": "Sofia Garcia",
-        "label": "CEO of Melodisco",
-        "description": "The templates are production-ready and highly customizable. We built our AI music platform in hours instead of months. Incredible time-to-market!",
+        "label": "Student",
+        "description": "The variety of styles and resolutions is perfect. I can create wallpapers for my phone, tablet, and laptop all in one place. Love it!",
         "image": {
           "src": "/imgs/users/4.png"
         }
       },
       {
         "title": "James Wilson",
-        "label": "Tech Lead at GPTs.works",
-        "description": "ShipAny's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
+        "label": "Developer",
+        "label": "Developer",
+        "description": "The interface is so intuitive and the generation speed is impressive. I can create multiple wallpapers in minutes. Great tool for personalizing my workspace.",
         "image": {
           "src": "/imgs/users/5.png"
         }
       },
       {
         "title": "Anna Zhang",
-        "label": "Startup Founder",
-        "description": "From idea to launch in 3 days! ShipAny's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
+        "label": "Artist",
+        "description": "The AI understands artistic concepts so well! I can describe complex ideas and get beautiful wallpapers that capture exactly what I envisioned.",
         "image": {
           "src": "/imgs/users/6.png"
         }
@@ -330,50 +295,50 @@
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions About ShipAny",
+    "title": "Frequently Asked Questions About AI Wallpaper Generator",
     "description": "Have another question? Contact us on Discord or by email.",
     "items": [
       {
-        "title": "What exactly is ShipAny and how does it work?",
-        "description": "ShipAny is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "title": "What is AI Wallpaper Generator and how does it work?",
+        "description": "AI Wallpaper Generator is an advanced tool that uses artificial intelligence to create unique, high-quality wallpapers. Simply input your preferences or describe what you want, and our AI will generate beautiful, customized wallpapers for your devices."
       },
       {
-        "title": "Do I need advanced technical skills to use ShipAny?",
-        "description": "While basic programming knowledge is helpful, ShipAny is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "title": "What types of wallpapers can I create?",
+        "description": "You can create various types of wallpapers including abstract art, nature scenes, minimalist designs, artistic patterns, and custom-themed wallpapers. Our AI can generate wallpapers in different styles, colors, and moods to match your preferences."
       },
       {
-        "title": "What types of AI SaaS can I build with ShipAny?",
-        "description": "ShipAny supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "title": "What resolutions are supported?",
+        "description": "Our AI Wallpaper Generator supports multiple resolutions including standard phone sizes (1080x1920, 1440x3200), desktop resolutions (1920x1080, 2560x1440, 3840x2160), and tablet sizes. You can also request custom resolutions for specific devices."
       },
       {
-        "title": "How long does it typically take to launch with ShipAny?",
-        "description": "With ShipAny, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "title": "How many wallpapers can I generate?",
+        "description": "The number of wallpapers you can generate depends on your subscription plan. We offer different tiers with varying generation limits, from basic to unlimited generation options. Check our pricing page for detailed information."
       },
       {
-        "title": "What's included in the ShipAny infrastructure?",
-        "description": "ShipAny provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+        "title": "Can I use the generated wallpapers commercially?",
+        "description": "Yes, with our commercial license, you can use the generated wallpapers for commercial purposes. Each generated wallpaper comes with usage rights, and our commercial plans include extended licensing options for business use."
       },
       {
-        "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All ShipAny templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "title": "How do I get the best results?",
+        "description": "For the best results, provide clear descriptions of what you want, specify your preferred style, colors, and mood. You can also use our style presets and reference images to guide the AI. Our platform includes tips and examples to help you create perfect wallpapers."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with ShipAny.",
+    "title": "Create Wallpaper Now",
+    "description": "Transform your device with AI-generated wallpapers that match your style.",
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "Start Creating",
+        "url": "/#pricing",
+        "target": "_self",
         "icon": "GoArrowUpRight"
       },
       {
-        "title": "Read Document",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "View Gallery",
+        "url": "/gallery",
+        "target": "_self",
         "variant": "outline"
       }
     ]
@@ -381,15 +346,15 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+      "title": "AI Wallpaper",
+      "description": "Create stunning, unique wallpapers with artificial intelligence. Transform your devices with personalized AI-generated artwork.",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "AI Wallpaper"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • ShipAny All rights reserved.",
+    "copyright": "© 2025 • AI Wallpaper All rights reserved.",
     "nav": {
       "items": [
         {
@@ -416,39 +381,39 @@
           "title": "Resources",
           "children": [
             {
-              "title": "Documents",
-              "url": "https://docs.shipany.ai",
-              "target": "_blank"
+              "title": "Gallery",
+              "url": "/gallery",
+              "target": "_self"
             },
             {
-              "title": "Components",
-              "url": "https://shipany.ai/components",
-              "target": "_blank"
+              "title": "Tutorials",
+              "url": "/tutorials",
+              "target": "_self"
             },
             {
-              "title": "Templates",
-              "url": "https://shipany.ai/templates",
-              "target": "_blank"
+              "title": "API",
+              "url": "/api",
+              "target": "_self"
             }
           ]
         },
         {
-          "title": "Friends",
+          "title": "Support",
           "children": [
             {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
+              "title": "Help Center",
+              "url": "/help",
+              "target": "_self"
             },
             {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
+              "title": "Contact",
+              "url": "/contact",
+              "target": "_self"
             },
             {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
+              "title": "Feedback",
+              "url": "/feedback",
+              "target": "_self"
             }
           ]
         }
@@ -459,25 +424,25 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/shipanyai",
+          "url": "https://x.com/aiwallpaper",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "RiGithubFill",
-          "url": "https://github.com/shipanyai",
+          "url": "https://github.com/aiwallpaper",
           "target": "_blank"
         },
         {
           "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://discord.gg/HQNnrzjZQS",
+          "url": "https://discord.gg/aiwallpaper",
           "target": "_blank"
         },
         {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@shipany.ai",
+          "url": "mailto:support@aiwallpaper.com",
           "target": "_self"
         }
       ]

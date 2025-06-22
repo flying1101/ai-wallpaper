@@ -11,6 +11,9 @@ import Showcase from "@/components/blocks/showcase";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
 import { getLandingPage } from "@/services/page";
+import Generator from "@/components/generator";
+import Wallpapers from "@/components/wallpapers";
+import { getWallpapers } from "@/models/wallpaper";
 
 export async function generateMetadata({
   params,
@@ -39,10 +42,15 @@ export default async function LandingPage({
   const { locale } = await params;
   const page = await getLandingPage(locale);
 
+  const  wallpapers  = await getWallpapers(1,20);
+
   return (
     <>
       {page.hero && <Hero hero={page.hero} />}
-      {page.branding && <Branding section={page.branding} />}
+      <Generator />
+      <Wallpapers wallpapers={wallpapers} /> 
+       {page.feature && <Feature section={page.feature} />}
+      {/* {page.branding && <Branding section={page.branding} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}
       {page.usage && <Feature3 section={page.usage} />}
@@ -52,7 +60,7 @@ export default async function LandingPage({
       {page.pricing && <Pricing pricing={page.pricing} />}
       {page.testimonial && <Testimonial section={page.testimonial} />}
       {page.faq && <FAQ section={page.faq} />}
-      {page.cta && <CTA section={page.cta} />}
+      {page.cta && <CTA section={page.cta} />} */}
     </>
   );
 }
