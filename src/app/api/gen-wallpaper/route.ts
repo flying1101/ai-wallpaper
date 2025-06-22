@@ -1,4 +1,4 @@
-import { respData, respErr } from "@/lib/resp";
+import { respData, respErr, respJson } from "@/lib/resp";
 import { ImageGenerateParams } from "openai/resources/images.mjs";
 import { getUuid } from "@/lib/hash";
 
@@ -19,6 +19,12 @@ import { getOpenAIClient } from "@/services/openai";
 
 export async function POST(req: Request) {
   try {
+
+    const user_uuid = await getUserUuid();
+    if (!user_uuid) {
+      return respJson(-2, "no auth");
+    }
+
     const client = getOpenAIClient();
     const { description } = await req.json();
 
@@ -51,11 +57,7 @@ export async function POST(req: Request) {
     const s3_rep = await uploadImageFromUrl(raw_img_url, key);
     const { s3_url } = s3_rep;
     console.log("s3_url=", s3_url);
-    const user_uuid = await getUserUuid();
-
-    if (!user_uuid) {
-      return respErr("user not login");
-    }
+  
 
     const cost_credits = 3;
     const credits = await getUserCredits(user_uuid);
