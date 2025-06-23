@@ -2,8 +2,13 @@
 
 import { useState } from "react";
 import { toast } from "sonner";
+import { useTranslations } from "next-intl";
 
 export default function Generator() {
+
+  const t = useTranslations();
+
+  t("user.sign_in")
   
   const [description, setDescription] = useState("");
   const [loading, setLoading] = useState(false);

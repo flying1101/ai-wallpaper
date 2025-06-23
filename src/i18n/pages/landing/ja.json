@@ -1,0 +1,459 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "AI壁紙",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI壁紙"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "価格",
+          "url": "/pricing",
+          "icon": "MdPayment"
+        }
+      ]
+    },
+    "buttons": [],
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "AI壁紙ジェネレーター",
+    "highlight_text": "AI壁紙",
+    "description": "人工知能で美しくユニークな壁紙を作成しましょう。<br/>パーソナライズされたAI生成アートでデバイスを彩ります。",
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "AI壁紙は最先端技術で動作しています",
+    "items": [
+      {
+        "title": "Next.js",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Next.js"
+        }
+      },
+      {
+        "title": "React",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "React"
+        }
+      },
+      {
+        "title": "TailwindCSS",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "TailwindCSS"
+        }
+      },
+      {
+        "title": "Shadcn/UI",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "Shadcn/UI"
+        }
+      },
+      {
+        "title": "Vercel",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "Vercel"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "AI壁紙ジェネレーターとは",
+    "label": "紹介",
+    "description": "AI壁紙ジェネレーターは、人工知能を活用してあらゆるデバイス向けにユニークで高品質な壁紙を作成する先進的なプラットフォームです。",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "AIによる生成",
+        "description": "高度なAIモデルがあなたの好みやスタイルを理解し、ユニークな壁紙を作成します。",
+        "icon": "RiRobot2Line"
+      },
+      {
+        "title": "多様な解像度",
+        "description": "スマートフォン、タブレット、デスクトップ、カスタム解像度など、あらゆるデバイスに対応した壁紙を生成します。",
+        "icon": "RiSmartphoneLine"
+      },
+      {
+        "title": "即時作成",
+        "description": "最適化されたAI生成プロセスで、数秒で美しい壁紙を手に入れましょう。",
+        "icon": "RiTimeLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "AI壁紙ジェネレーターを選ぶ理由",
+    "label": "メリット",
+    "description": "創造性とテクノロジーの完璧な融合を、AI搭載の壁紙生成プラットフォームで体験してください。",
+    "items": [
+      {
+        "title": "無限の創造性",
+        "description": "芸術的なスタイルや色、テーマを理解するAIで、無限にユニークな壁紙を生成できます。",
+        "icon": "RiPaletteLine",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "パーソナライズ体験",
+        "description": "AIのインテリジェントな提案で、気分やスタイル、好みに合った壁紙を作成できます。",
+        "icon": "RiUserHeartLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "プロフェッショナル品質",
+        "description": "個人利用や商用プロジェクトにも適した高解像度の壁紙を、適切なライセンスでご利用いただけます。",
+        "icon": "RiImageLine",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "理想の壁紙を作る方法",
+    "description": "4つの簡単なステップで美しいAI壁紙を生成しましょう：",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "イメージを伝える",
+        "description": "AIに希望を伝えましょう。スタイル、色、雰囲気、テーマなど理想の壁紙を説明してください。",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "スタイルを選ぶ",
+        "description": "抽象画、自然、ミニマリスト、アート、カスタムテーマなど様々なスタイルから選択できます。",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "解像度を選択",
+        "description": "スマートフォンから4Kデスクトップまで、デバイスに最適な解像度を選びましょう。",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "ダウンロードして楽しむ",
+        "description": "高品質なAI生成壁紙をダウンロードし、デバイスの背景に設定しましょう。",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "AI壁紙ジェネレーターの主な特徴",
+    "description": "人工知能でパーソナライズされた美しい壁紙を作成するためのすべての機能。",
+    "items": [
+      {
+        "title": "AIによる生成",
+        "description": "高度なAIモデルが、あなたの説明や好みに基づいてユニークで高品質な壁紙を作成します。",
+        "icon": "RiRobot2Line"
+      },
+      {
+        "title": "多様な解像度",
+        "description": "スマートフォン、タブレット、デスクトップ、カスタム解像度など、すべてのデバイスサイズに対応。",
+        "icon": "RiSmartphoneLine"
+      },
+      {
+        "title": "多彩なスタイル",
+        "description": "抽象アート、自然風景、ミニマルデザイン、アートパターン、カスタムテーマから選択可能。",
+        "icon": "RiPaletteLine"
+      },
+      {
+        "title": "即時生成",
+        "description": "最適化されたAI処理と配信システムで、数秒で壁紙を入手できます。",
+        "icon": "RiTimeLine"
+      },
+      {
+        "title": "商用ライセンス",
+        "description": "生成された壁紙は、適切なライセンスと使用権で商用プロジェクトにも利用可能です。",
+        "icon": "RiCopyrightLine"
+      },
+      {
+        "title": "使いやすいインターフェース",
+        "description": "直感的なデザインで、理想の壁紙を簡単に作成・カスタマイズ・ダウンロードできます。",
+        "icon": "RiLayoutLine"
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "統計",
+    "title": "多くの人がAI壁紙ジェネレーターを愛用",
+    "description": "その創造性と使いやすさが評価されています。",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "信頼されているユーザー数",
+        "label": "10K+",
+        "description": "ユーザー"
+      },
+      {
+        "title": "生成された壁紙数",
+        "label": "50K+",
+        "description": "壁紙"
+      },
+      {
+        "title": "作成時間",
+        "label": "30",
+        "description": "秒"
+      }
+    ]
+  },
+  "testimonial": {
+    "disabled": true,
+    "name": "testimonial",
+    "label": "口コミ",
+    "title": "AI壁紙ジェネレーターのユーザーの声",
+    "description": "AI生成壁紙でデバイスを変えたユーザーの声をご紹介します。",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "David Chen",
+        "label": "デザイナー",
+        "description": "AI壁紙ジェネレーターは素晴らしいです！気分やスタイルにぴったり合うユニークな壁紙を簡単に作成できます。品質も素晴らしく、操作もとても簡単です。",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Rachel Kim",
+        "label": "テック愛好家",
+        "description": "ついに自分の希望を理解してくれる壁紙ジェネレーターが登場！AIが美しくパーソナライズされた壁紙を作ってくれます。",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Marcus Thompson",
+        "label": "クリエイティブプロフェッショナル",
+        "description": "デザイナーとして、ユニークな壁紙を手に入れられるのは嬉しいです。AIが創造的なデザインを生み出してくれるので、自分の作品にもインスピレーションを与えてくれます。おすすめです！",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "Sofia Garcia",
+        "label": "学生",
+        "description": "スタイルや解像度のバリエーションが豊富で、スマホ、タブレット、ノートPC用の壁紙を一度に作成できます。とても気に入っています！",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "James Wilson",
+        "label": "開発者",
+        "description": "インターフェースが直感的で、生成速度も速いです。数分で複数の壁紙を作成できます。ワークスペースの個性化に最適なツールです。",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "Anna Zhang",
+        "label": "アーティスト",
+        "description": "AIは芸術的なコンセプトをとてもよく理解しています！複雑なアイデアを伝えても、イメージ通りの美しい壁紙を作ってくれます。",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "よくある質問",
+    "title": "AI壁紙ジェネレーターに関するよくある質問",
+    "description": "他にご質問がある場合は、Discordまたはメールでお問い合わせください。",
+    "items": [
+      {
+        "title": "AI壁紙ジェネレーターとは？どのように動作しますか？",
+        "description": "AI壁紙ジェネレーターは、人工知能を活用してユニークで高品質な壁紙を作成する先進的なツールです。ご希望やイメージを入力するだけで、AIが美しくカスタマイズされた壁紙を生成します。"
+      },
+      {
+        "title": "どんな種類の壁紙を作成できますか？",
+        "description": "抽象アート、自然風景、ミニマルデザイン、アートパターン、カスタムテーマなど、さまざまなスタイルの壁紙を作成できます。AIはご希望のスタイルや色、雰囲気に合わせて壁紙を生成します。"
+      },
+      {
+        "title": "対応している解像度は？",
+        "description": "AI壁紙ジェネレーターは、標準的なスマートフォンサイズ（1080x1920、1440x3200）、デスクトップ解像度（1920x1080、2560x1440、3840x2160）、タブレットサイズなど、複数の解像度に対応しています。特定のデバイス向けにカスタム解像度もリクエスト可能です。"
+      },
+      {
+        "title": "壁紙は何枚まで生成できますか？",
+        "description": "生成できる壁紙の枚数はご利用プランによって異なります。ベーシックから無制限まで、さまざまなプランをご用意しています。詳細は価格ページをご覧ください。"
+      },
+      {
+        "title": "生成した壁紙を商用利用できますか？",
+        "description": "はい、商用ライセンスをご利用いただくことで、生成した壁紙を商用目的で使用できます。各壁紙には使用権が付与されており、商用プランでは拡張ライセンスもご利用いただけます。"
+      },
+      {
+        "title": "最良の結果を得るには？",
+        "description": "最良の結果を得るには、ご希望を明確に記載し、スタイルや色、雰囲気を指定してください。スタイルプリセットや参考画像も活用できます。プラットフォームにはヒントやサンプルも掲載していますので、理想の壁紙作成にお役立てください。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "今すぐ壁紙を作成",
+    "description": "あなたのスタイルに合ったAI生成壁紙でデバイスを変身させましょう。",
+    "buttons": [
+      {
+        "title": "作成を始める",
+        "url": "/#pricing",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      },
+      {
+        "title": "ギャラリーを見る",
+        "url": "/gallery",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "AI壁紙",
+      "description": "人工知能で美しくユニークな壁紙を作成。パーソナライズされたAI生成アートでデバイスを彩ります。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI壁紙"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • AI壁紙 All rights reserved.",
+    "nav": {
+      "items": [
+        {
+          "title": "会社情報",
+          "children": [
+            {
+              "title": "特徴",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "ショーケース",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "価格",
+              "url": "/#pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "リソース",
+          "children": [
+            {
+              "title": "ギャラリー",
+              "url": "/gallery",
+              "target": "_self"
+            },
+            {
+              "title": "チュートリアル",
+              "url": "/tutorials",
+              "target": "_self"
+            },
+            {
+              "title": "API",
+              "url": "/api",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "サポート",
+          "children": [
+            {
+              "title": "ヘルプセンター",
+              "url": "/help",
+              "target": "_self"
+            },
+            {
+              "title": "お問い合わせ",
+              "url": "/contact",
+              "target": "_self"
+            },
+            {
+              "title": "フィードバック",
+              "url": "/feedback",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/aiwallpaper",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "RiGithubFill",
+          "url": "https://github.com/aiwallpaper",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/aiwallpaper",
+          "target": "_blank"
+        },
+        {
+          "title": "メール",
+          "icon": "RiMailLine",
+          "url": "mailto:support@aiwallpaper.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "プライバシーポリシー",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "利用規約",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+} 
