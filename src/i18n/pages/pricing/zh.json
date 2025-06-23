@@ -1,0 +1,107 @@
+{
+    "pricing": {
+      "name": "pricing",
+      "label": "价格",
+      "title": "价格",
+      "description": "Ai Wallpaper是一款利用人工智能技术生成独特、个性化壁纸的应用程序",
+      "groups": [],
+      "items": [
+        {
+          "title": "入门版",
+          "description": "开始创作独特的 AI 生成壁纸。",
+          "features_title": "包含",
+          "features": [
+            "100 壁纸积分",
+            "访问基础 AI 壁纸模型",
+            "下载高清壁纸",
+            "个人画廊管理",
+            "基础自定义选项",
+            "社区分享"
+          ],
+          "interval": "one-time",
+          "amount": 990,
+          "cn_amount": 100,
+          "currency": "USD",
+          "price": "$9.9",
+          "original_price": "$12.9",
+          "unit": "USD",
+          "is_featured": false,
+          "tip": "非常适合个人使用和体验 AI 壁纸！",
+          "button": {
+            "title": "获取 AiWallpaper",
+            "url": "/#pricing",
+            "icon": "RiFlashlightFill"
+          },
+          "product_id": "starter",
+          "product_name": "AiWallpaper 入门包",
+          "credits": 100,
+          "valid_months": 1
+        },
+        {
+          "title": "标准版",
+          "description": "解锁更多 AI 壁纸功能和积分。",
+          "label": "热门",
+          "features_title": "包含入门版，另加",
+          "features": [
+            "400 壁纸积分",
+            "访问高级 AI 壁纸模型",
+            "批量壁纸生成",
+            "壁纸渲染队列优先",
+            "新风格抢先体验",
+            "自定义壁纸请求",
+            "无广告体验"
+          ],
+          "interval": "one-time",
+          "amount": 1990,
+          "cn_amount": 1500,
+          "currency": "USD",
+          "price": "$19.9",
+          "original_price": "$25.9",
+          "unit": "USD",
+          "is_featured": true,
+          "tip": "最适合壁纸爱好者和高级用户！",
+          "button": {
+            "title": "获取 AiWallpaper",
+            "url": "/#pricing",
+            "icon": "RiFlashlightFill"
+          },
+          "product_id": "standard",
+          "product_name": "AiWallpaper 标准包",
+          "credits": 400,
+          "valid_months": 3
+        },
+        {
+          "title": "高级版",
+          "description": "全面访问所有 AI 壁纸功能和最高积分。",
+          "features_title": "包含标准版，另加",
+          "features": [
+            "1000 壁纸积分",
+            "商用授权",
+            "超高清和 4K 壁纸下载",
+            "API 接口自动化",
+            "团队管理功能",
+            "专属高级风格",
+            "专属客服支持"
+          ],
+          "interval": "one-time",
+          "amount": 200,
+          "cn_amount": 300,
+          "currency": "USD",
+          "price": "$49.99",
+          "original_price": "$69.99",
+          "unit": "USD",
+          "is_featured": false,
+          "tip": "适合企业、团队和商业项目！",
+          "button": {
+            "title": "获取 AiWallpaper",
+            "url": "/#pricing",
+            "icon": "RiFlashlightFill"
+          },
+          "product_id": "premium",
+          "product_name": "AiWallpaper 高级包",
+          "credits": 1000,
+          "valid_months": 12
+        }
+      ]
+    }
+  }
