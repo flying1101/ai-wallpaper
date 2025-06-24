@@ -32,6 +32,10 @@ export default function SignUser({ user }: { user: User }) {
       url: "/my-orders",
     },
     {
+      title: t("user.admin_system"),
+      url: "/admin/users",
+    },
+    {
       title: t("user.sign_out"),
       onClick: () => signOut(),
     },
