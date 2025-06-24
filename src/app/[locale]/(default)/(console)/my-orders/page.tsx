@@ -46,23 +46,23 @@ export default async function () {
 
   const table: TableSlotType = {
     title: t("my_orders.title"),
-    toolbar: {
-      items: [
-        {
-          title: t("my_orders.read_docs"),
-          icon: "RiBookLine",
-          url: "https://docs.shipany.ai",
-          target: "_blank",
-          variant: "outline",
-        },
-        {
-          title: t("my_orders.join_discord"),
-          icon: "RiDiscordFill",
-          url: "https://discord.gg/HQNnrzjZQS",
-          target: "_blank",
-        },
-      ],
-    },
+    // toolbar: {
+    //   items: [
+    //     {
+    //       title: t("my_orders.read_docs"),
+    //       icon: "RiBookLine",
+    //       url: "https://docs.shipany.ai",
+    //       target: "_blank",
+    //       variant: "outline",
+    //     },
+    //     {
+    //       title: t("my_orders.join_discord"),
+    //       icon: "RiDiscordFill",
+    //       url: "https://discord.gg/HQNnrzjZQS",
+    //       target: "_blank",
+    //     },
+    //   ],
+    // },
     columns: columns,
     data: orders,
     empty_message: t("my_orders.no_orders"),

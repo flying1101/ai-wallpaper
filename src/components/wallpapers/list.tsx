@@ -1,22 +1,31 @@
 "use client";
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FaDownload } from "react-icons/fa";
 import Image from "next/image";
+import { Wallpaper } from "@/types/wallpaper";
 import { toast } from "sonner";
 
-import { Wallpaper } from "@/types/wallpaper";
+interface Props {
+  wallpapers: Wallpaper[] | null;
+  loading: boolean;
+}
 
 
-export default function Wallpapers ({ wallpapers }:{wallpapers: Wallpaper[] | undefined}) {
 
+export default function ({ wallpapers, loading }: Props) {
   return (
     <section>
       <div className="mx-auto w-full max-w-7xl px-0 py-2 md:px-10 md:py-8 lg:py-8">
         <div className="flex flex-col items-stretch">
           <div className="gap-x-8 [column-count:1] md:grid-cols-2 md:gap-x-4 md:[column-count:3]">
+            {loading ? (
+              <div className="text-center mx-auto py-4">loading...</div>
+            ) : (
               <>
                 {wallpapers &&
                   wallpapers.map((wallpaper: Wallpaper, idx: number) => {
@@ -30,6 +39,7 @@ export default function Wallpapers ({ wallpapers }:{wallpapers: Wallpaper[] | un
                           alt={wallpaper.img_description}
                           width={350}
                           height={200}
+                          loading="lazy"
                         />
 
                         <div className="px-5 py-8 sm:px-6">
@@ -38,20 +48,19 @@ export default function Wallpapers ({ wallpapers }:{wallpapers: Wallpaper[] | un
                           </p>
                           <div className="flex items-center mb-5 mt-6 flex-wrap gap-2 md:mb-6 lg:mb-8">
                             <Badge variant="secondary">
-                              {/* {wallpaper.img_size} */}
-                              1792x1024
+                              {wallpaper.img_size}
                             </Badge>
 
                             <div className="flex-1"></div>
-                            {/* <Avatar>
+                            <Avatar>
                               <AvatarImage
                                 src={wallpaper.created_user?.avatar_url}
                                 alt={wallpaper.created_user?.nickname}
                               />
                               <AvatarFallback>
-                                {wallpaper?.nickname}
+                                {wallpaper.created_user?.nickname}
                               </AvatarFallback>
-                            </Avatar> */}
+                            </Avatar>
                           </div>
                           <div className="flex flex-wrap items-center justify-between gap-4">
                             <a
@@ -64,7 +73,7 @@ export default function Wallpapers ({ wallpapers }:{wallpapers: Wallpaper[] | un
                               </p>
                             </a>
                             <CopyToClipboard
-                              text={wallpaper.img_url}
+                              text={wallpaper.img_description}
                               onCopy={() => toast.success("Copied")}
                             >
                               <Button>Copy Prompt</Button>
@@ -75,28 +84,10 @@ export default function Wallpapers ({ wallpapers }:{wallpapers: Wallpaper[] | un
                     );
                   })}
               </>
+            )}
           </div>
         </div>
       </div>
     </section>
   );
-
-  // return (
-  //   <div className="p-8">
-  //     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center max-w-4xl mx-auto">
-  //       {wallpapers && wallpapers.map((wallpaper, idx) => (
-  //         <WallpaperCard
-  //           key={idx}
-  //           image={wallpaper.img_url}
-  //           title={wallpaper.img_description}
-  //           size={wallpaper.status}
-  //           author={wallpaper.status}
-  //           // onDownload={() => alert("下载功能未实现")}
-  //           // onCopyPrompt={() => alert("复制功能未实现")}
-  //         />
-  //       ))}
-  //     </div>
-  //   </div>
-  // );
-};
-
+}
