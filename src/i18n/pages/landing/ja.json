@@ -206,6 +206,111 @@
       }
     ]
   },
+  "pricing": {
+    "name": "pricing",
+    "label": "Pricing",
+    "title": "価格",
+    "description": "Ai Wallpaperは、人工知能技術を利用して独自のパーソナライズされた壁紙を生成するアプリケーションです",
+    "groups": [],
+    "items": [
+      {
+        "title": "スターター",
+        "description": "ユニークなAI生成壁紙の作成を始めましょう。",
+        "features_title": "含まれる内容",
+        "features": [
+          "100枚の壁紙クレジット",
+          "基本的なAI壁紙モデルへのアクセス",
+          "HD壁紙のダウンロード",
+          "個人ギャラリー管理",
+          "基本的なカスタマイズオプション",
+          "コミュニティでの共有"
+        ],
+        "interval": "one-time",
+        "amount": 990,
+        "cn_amount": 100,
+        "currency": "USD",
+        "price": "$9.9",
+        "original_price": "$12.9",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "個人利用やAI壁紙を試したい方に最適！",
+        "button": {
+          "title": "AiWallpaperを入手",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "starter",
+        "product_name": "AiWallpaperスターターパック",
+        "credits": 100,
+        "valid_months": 1
+      },
+      {
+        "title": "スタンダード",
+        "description": "さらに多くのAI壁紙機能とクレジットをアンロック。",
+        "label": "Popular",
+        "features_title": "スターターの全機能に加え",
+        "features": [
+          "400枚の壁紙クレジット",
+          "高度なAI壁紙モデルへのアクセス",
+          "壁紙の一括生成",
+          "壁紙レンダリングキューでの優先順位",
+          "新しいスタイルへの先行アクセス",
+          "カスタム壁紙リクエスト",
+          "広告なしの体験"
+        ],
+        "interval": "one-time",
+        "amount": 1990,
+        "cn_amount": 1500,
+        "currency": "USD",
+        "price": "$19.9",
+        "original_price": "$25.9",
+        "unit": "USD",
+        "is_featured": true,
+        "tip": "壁紙愛好家やパワーユーザーに最適！",
+        "button": {
+          "title": "AiWallpaperを入手",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard",
+        "product_name": "AiWallpaperスタンダードパック",
+        "credits": 400,
+        "valid_months": 3
+      },
+      {
+        "title": "プレミアム",
+        "description": "全てのAI壁紙機能と最大クレジットをフル活用。",
+        "features_title": "スタンダードの全機能に加え",
+        "features": [
+          "1000枚の壁紙クレジット",
+          "商用利用ライセンス",
+          "ウルトラHD・4K壁紙のダウンロード",
+          "自動化のためのAPIアクセス",
+          "チーム管理機能",
+          "限定プレミアムスタイル",
+          "専用サポート"
+        ],
+        "interval": "one-time",
+        "amount": 200,
+        "cn_amount": 300,
+        "currency": "USD",
+        "price": "$49.99",
+        "original_price": "$69.99",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "ビジネス、チーム、商用プロジェクトに最適！",
+        "button": {
+          "title": "AiWallpaperを入手",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "AiWallpaperプレミアムパック",
+        "credits": 1000,
+        "valid_months": 12
+      }
+    ]
+  },
   "stats": {
     "name": "stats",
     "label": "統計",
@@ -362,53 +467,8 @@
               "target": "_self"
             },
             {
-              "title": "ショーケース",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
               "title": "価格",
               "url": "/#pricing",
-              "target": "_self"
-            }
-          ]
-        },
-        {
-          "title": "リソース",
-          "children": [
-            {
-              "title": "ギャラリー",
-              "url": "/gallery",
-              "target": "_self"
-            },
-            {
-              "title": "チュートリアル",
-              "url": "/tutorials",
-              "target": "_self"
-            },
-            {
-              "title": "API",
-              "url": "/api",
-              "target": "_self"
-            }
-          ]
-        },
-        {
-          "title": "サポート",
-          "children": [
-            {
-              "title": "ヘルプセンター",
-              "url": "/help",
-              "target": "_self"
-            },
-            {
-              "title": "お問い合わせ",
-              "url": "/contact",
-              "target": "_self"
-            },
-            {
-              "title": "フィードバック",
-              "url": "/feedback",
               "target": "_self"
             }
           ]
@@ -456,4 +516,4 @@
       ]
     }
   }
-} 
+}

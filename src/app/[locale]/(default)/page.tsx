@@ -51,6 +51,7 @@ export default async function LandingPage({
       <Generator />
       <Wallpapers wallpapers={wallpapers} /> 
        {page.feature && <Feature section={page.feature} />}
+       {page.pricing && <Pricing pricing={page.pricing} /> }
       {/* {page.branding && <Branding section={page.branding} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}

@@ -209,6 +209,111 @@
       }
     ]
   },
+  "pricing": {
+    "name": "pricing",
+    "label": "Pricing",
+    "title": "Pricing",
+    "description": "Ai Wallpaper is an application that uses artificial intelligence technology to generate unique and personalized wallpapers",
+    "groups": [],
+    "items": [
+      {
+        "title": "Starter",
+        "description": "Start creating unique AI-generated wallpapers.",
+        "features_title": "Includes",
+        "features": [
+          "100 wallpaper credits",
+          "Access to basic AI wallpaper models",
+          "Download HD wallpapers",
+          "Personal gallery management",
+          "Basic customization options",
+          "Community sharing"
+        ],
+        "interval": "one-time",
+        "amount": 990,
+        "cn_amount": 100,
+        "currency": "USD",
+        "price": "$9.9",
+        "original_price": "$12.9",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "Perfect for personal use and trying out AI wallpapers!",
+        "button": {
+          "title": "Get AiWallpaper",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "starter",
+        "product_name": "AiWallpaper Starter Pack",
+        "credits": 100,
+        "valid_months": 1
+      },
+      {
+        "title": "Standard",
+        "description": "Unlock more AI wallpaper features and credits.",
+        "label": "Popular",
+        "features_title": "Everything in Starter, plus",
+        "features": [
+          "400 wallpaper credits",
+          "Access to advanced AI wallpaper models",
+          "Batch wallpaper generation",
+          "Priority in wallpaper rendering queue",
+          "Early access to new styles",
+          "Custom wallpaper requests",
+          "Ad-free experience"
+        ],
+        "interval": "one-time",
+        "amount": 1990,
+        "cn_amount": 1500,
+        "currency": "USD",
+        "price": "$19.9",
+        "original_price": "$25.9",
+        "unit": "USD",
+        "is_featured": true,
+        "tip": "Best for wallpaper enthusiasts and power users!",
+        "button": {
+          "title": "Get AiWallpaper",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard",
+        "product_name": "AiWallpaper Standard Pack",
+        "credits": 400,
+        "valid_months": 3
+      },
+      {
+        "title": "Premium",
+        "description": "Full access to all AI wallpaper features and maximum credits.",
+        "features_title": "Everything in Standard, plus",
+        "features": [
+          "1000 wallpaper credits",
+          "Commercial use license",
+          "Ultra HD and 4K wallpaper downloads",
+          "API access for automation",
+          "Team management features",
+          "Exclusive premium styles",
+          "Dedicated support"
+        ],
+        "interval": "one-time",
+        "amount": 200,
+        "cn_amount": 300,
+        "currency": "USD",
+        "price": "$49.99",
+        "original_price": "$69.99",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "Ideal for businesses, teams, and commercial projects!",
+        "button": {
+          "title": "Get AiWallpaper",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "AiWallpaper Premium Pack",
+        "credits": 1000,
+        "valid_months": 12
+      }
+    ]
+  },
   "stats": {
     "name": "stats",
     "label": "Stats",
@@ -366,57 +471,13 @@
               "target": "_self"
             },
             {
-              "title": "Showcases",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
               "title": "Pricing",
               "url": "/#pricing",
               "target": "_self"
             }
           ]
-        },
-        {
-          "title": "Resources",
-          "children": [
-            {
-              "title": "Gallery",
-              "url": "/gallery",
-              "target": "_self"
-            },
-            {
-              "title": "Tutorials",
-              "url": "/tutorials",
-              "target": "_self"
-            },
-            {
-              "title": "API",
-              "url": "/api",
-              "target": "_self"
-            }
-          ]
-        },
-        {
-          "title": "Support",
-          "children": [
-            {
-              "title": "Help Center",
-              "url": "/help",
-              "target": "_self"
-            },
-            {
-              "title": "Contact",
-              "url": "/contact",
-              "target": "_self"
-            },
-            {
-              "title": "Feedback",
-              "url": "/feedback",
-              "target": "_self"
-            }
-          ]
         }
+        
       ]
     },
     "social": {
