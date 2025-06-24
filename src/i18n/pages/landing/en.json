@@ -32,7 +32,12 @@
     "highlight_text": "AI Wallpaper",
     "description": "Create stunning, unique wallpapers with artificial intelligence.<br/>Transform your devices with personalized AI-generated artwork.",
     "show_happy_users": false,
-    "show_badge": false
+    "show_badge": false,
+    "generate": {
+      "placeholder": "Wallpaper description",
+      "generate": "generate",
+      "generating": "generating"
+    }
   },
   "branding": {
     "title": "AI Wallpaper is powered by cutting-edge technology",

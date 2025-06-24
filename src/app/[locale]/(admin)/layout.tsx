@@ -63,28 +63,28 @@ export default async function AdminLayout({
         },
       ],
     },
-    bottomNav: {
-      items: [
-        {
-          title: "Documents",
-          url: "https://docs.shipany.ai",
-          target: "_blank",
-          icon: "RiFileTextLine",
-        },
-        {
-          title: "Blocks",
-          url: "https://shipany.ai/blocks",
-          target: "_blank",
-          icon: "RiDashboardLine",
-        },
-        {
-          title: "Showcases",
-          url: "https://shipany.ai/showcase",
-          target: "_blank",
-          icon: "RiAppsLine",
-        },
-      ],
-    },
+    // bottomNav: {
+    //   items: [
+    //     {
+    //       title: "Documents",
+    //       url: "https://docs.shipany.ai",
+    //       target: "_blank",
+    //       icon: "RiFileTextLine",
+    //     },
+    //     {
+    //       title: "Blocks",
+    //       url: "https://shipany.ai/blocks",
+    //       target: "_blank",
+    //       icon: "RiDashboardLine",
+    //     },
+    //     {
+    //       title: "Showcases",
+    //       url: "https://shipany.ai/showcase",
+    //       target: "_blank",
+    //       icon: "RiAppsLine",
+    //     },
+    //   ],
+    // },
     social: {
       items: [
         {

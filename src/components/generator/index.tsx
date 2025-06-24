@@ -8,7 +8,7 @@ export default function Generator() {
 
   const t = useTranslations();
 
-  t("user.sign_in")
+
   
   const [description, setDescription] = useState("");
   const [loading, setLoading] = useState(false);
@@ -57,7 +57,7 @@ export default function Generator() {
         onClick={handleGenerate}
         disabled={loading}
       >
-        {loading ? "Generating..." : "Generate"}
+        {loading ?   t("user.sign_in") : "Generate"}
       </button>
     </div>
   );
