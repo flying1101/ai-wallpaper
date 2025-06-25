@@ -32,12 +32,13 @@
     "highlight_text": "AI Wallpaper",
     "description": "Create stunning, unique wallpapers with artificial intelligence.<br/>Transform your devices with personalized AI-generated artwork.",
     "show_happy_users": false,
-    "show_badge": false,
-    "generate": {
-      "placeholder": "Wallpaper description",
-      "generate": "generate",
-      "generating": "generating"
-    }
+    "show_badge": false
+   
+  },
+  "sumbits": {
+    "placeholder": "Wallpaper description",
+    "generate": "generate",
+    "generating": "generating"
   },
   "branding": {
     "title": "AI Wallpaper is powered by cutting-edge technology",
@@ -483,34 +484,6 @@
           ]
         }
         
-      ]
-    },
-    "social": {
-      "items": [
-        {
-          "title": "X",
-          "icon": "RiTwitterXFill",
-          "url": "https://x.com/aiwallpaper",
-          "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "RiGithubFill",
-          "url": "https://github.com/aiwallpaper",
-          "target": "_blank"
-        },
-        {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/aiwallpaper",
-          "target": "_blank"
-        },
-        {
-          "title": "Email",
-          "icon": "RiMailLine",
-          "url": "mailto:support@aiwallpaper.com",
-          "target": "_self"
-        }
       ]
     },
     "agreement": {

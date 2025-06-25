@@ -57,7 +57,7 @@ export default function Generator() {
         onClick={handleGenerate}
         disabled={loading}
       >
-        {loading ?   t("user.sign_in") : "Generate"}
+        {loading ? "Generating..." : "Generate"}
       </button>
     </div>
   );
