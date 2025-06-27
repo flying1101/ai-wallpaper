@@ -119,7 +119,7 @@ export async function POST(req: Request) {
       order_no: order_no,
       created_at: created_at,
       user_uuid: user_uuid,
-      user_email: user_email,
+      user_email: user_uuid,
       amount: amount,
       interval: interval,
       expired_at: expired_at,
@@ -158,7 +158,7 @@ export async function POST(req: Request) {
         project: process.env.NEXT_PUBLIC_PROJECT_NAME || "",
         product_name: product_name,
         order_no: order_no.toString(),
-        user_email: user_email,
+        user_email: user_uuid,
         credits: credits,
         user_uuid: user_uuid,
       },
@@ -168,7 +168,7 @@ export async function POST(req: Request) {
     };
 
     if (user_email) {
-      options.customer_email = user_email;
+      // options.customer_email = user_email;
     }
 
     if (is_subscription) {

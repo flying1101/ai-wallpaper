@@ -3,7 +3,7 @@
 import Analytics from "@/components/analytics";
 import { CacheKey } from "@/services/constant";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import SignModal from "@/components/sign/modal";
+// import SignModal from "@/components/sign/modal";
 import type { ThemeProviderProps } from "next-themes";
 import { Toaster } from "@/components/ui/sonner";
 import { cacheGet } from "@/lib/cache";
@@ -48,7 +48,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
       {children}
 
       <Toaster position="top-center" richColors />
-      <SignModal />
+      {/* <SignModal /> */}
       <Analytics />
     </NextThemesProvider>
   );

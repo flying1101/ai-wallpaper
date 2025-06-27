@@ -2,11 +2,11 @@ import { CreditsAmount, CreditsTransType } from "./credit";
 import { findUserByEmail, findUserByUuid, insertUser } from "@/models/user";
 
 import { User } from "@/types/user";
-import { auth } from "@/auth";
 import { getOneYearLaterTimestr } from "@/lib/time";
 import { getUserUuidByApiKey } from "@/models/apikey";
 import { headers } from "next/headers";
 import { increaseCredits } from "./credit";
+import { auth, currentUser } from '@clerk/nextjs/server'
 
 export async function saveUser(user: User) {
   try {
@@ -35,7 +35,7 @@ export async function saveUser(user: User) {
 }
 
 export async function getUserUuid() {
-  let user_uuid = "";
+  let user_uuid;
 
   const token = await getBearerToken();
 
@@ -48,10 +48,13 @@ export async function getUserUuid() {
     }
   }
 
-  const session = await auth();
-  if (session && session.user && session.user.uuid) {
-    user_uuid = session.user.uuid;
-  }
+  const user  = await currentUser();
+  user_uuid  = await user?.id || "";
+
+  // const session = await auth();
+  // if (session && session.user && session.user.uuid) {
+  //   user_uuid = session.user.uuid;
+  // }
 
   return user_uuid;
 }
@@ -68,13 +71,14 @@ export async function getBearerToken() {
 
 export async function getUserEmail() {
   let user_email = "";
+  // const user = await currentUser();
+  const user  = await currentUser();
+  const emailAddresses = user?.emailAddresses || ""
+  // if (!user || !user.emailAddresses || user.emailAddresses.length === 0) {
+  //   return emailAddresses;
+  // }
 
-  const session = await auth();
-  if (session && session.user && session.user.email) {
-    user_email = session.user.email;
-  }
-
-  return user_email;
+  return emailAddresses;
 }
 
 export async function getUserInfo() {

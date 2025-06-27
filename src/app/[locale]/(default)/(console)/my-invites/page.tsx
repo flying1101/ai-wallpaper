@@ -31,7 +31,7 @@ export default async function () {
 
   let orders = await getOrdersByUserUuid(user_uuid);
   if (!orders || orders.length === 0) {
-    orders = await getOrdersByPaidEmail(user_email);
+    // orders = await getOrdersByPaidEmail(user_email);
   }
 
   user.is_affiliate = true;
