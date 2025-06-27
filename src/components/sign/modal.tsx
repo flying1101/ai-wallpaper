@@ -1,6 +1,6 @@
 "use client";
 
-import * as React from "react";
+import React, { useState } from "react";
 
 import {
   Dialog,
@@ -28,6 +28,8 @@ import { signIn } from "next-auth/react";
 import { useAppContext } from "@/contexts/app";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useTranslations } from "next-intl";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 
 export default function SignModal() {
   const t = useTranslations();
@@ -75,20 +77,56 @@ export default function SignModal() {
 function ProfileForm({ className }: React.ComponentProps<"form">) {
   const t = useTranslations();
 
+  const [formData, setFormData] = useState<{email:string, password:string}>({
+    email:"",
+    password: "",
+  });
+
+   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    console.log('name', name);
+    console.log('value', value);
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // todo 发送验证码
+    // 登陆操作
+    signIn("credentials", formData)
+  };
+
+
   return (
     <div className={cn("grid items-start gap-4", className)}>
-      {/* <div className="grid gap-2">
-        <Label htmlFor="email">{t("sign_modal.email_title")}</Label>
-        <Input type="email" id="email" placeholder="xxx@xxx.com" />
-      </div>
-      <div className="grid gap-2">
-        <Label htmlFor="password">{t("sign_modal.password_title")}</Label>
-        <Input id="password" type="password" />
-      </div>
-      <Button type="submit" className="w-full flex items-center gap-2">
-        <SiGmail className="w-4 h-4" />
-        {t("sign_modal.email_sign_in")}
-      </Button> */}
+      <form
+        // action={credentialsAction}
+        onSubmit={handleSubmit}
+      >
+        <div className="grid gap-2">
+          <Label htmlFor="email">{t("sign_modal.email_title")}</Label>
+          <Input
+            type="email"
+            name="email"
+            id="email"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="grid gap-2">
+          <Label htmlFor="password">{t("sign_modal.password_title")}</Label>
+          <Input id="password" 
+            type="password" 
+             name="password"
+            onChange={handleChange}  />
+        </div>
+        <Button type="submit" className="w-full flex items-center gap-2">
+          <SiGmail className="w-4 h-4" />
+          {t("sign_modal.email_sign_in")}
+        </Button>
+      </form>
 
       {process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true" && (
         <Button

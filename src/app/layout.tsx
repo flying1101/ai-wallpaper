@@ -1,5 +1,5 @@
 import "@/app/globals.css";
-
+import { ClerkProvider } from "@clerk/nextjs";
 import { setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/locale";
 import { cn } from "@/lib/utils";
@@ -18,6 +18,7 @@ export default async function RootLayout({
   const googleAdsenseCode = process.env.NEXT_PUBLIC_GOOGLE_ADCODE || "";
 
   return (
+    <ClerkProvider>
     <html lang={locale} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,5 +41,6 @@ export default async function RootLayout({
       </head>
       <body className={cn("min-h-screen overflow-x-hidden")}>{children}</body>
     </html>
+    </ClerkProvider>
   );
 }

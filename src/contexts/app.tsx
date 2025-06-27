@@ -14,21 +14,25 @@ import { ContextValue } from "@/types/context";
 import { User } from "@/types/user";
 import moment from "moment";
 import useOneTapLogin from "@/hooks/useOneTapLogin";
-import { useSession } from "next-auth/react";
+import { useUser } from "@clerk/nextjs";
+
+// import { useSession } from "next-auth/react";
 
 const AppContext = createContext({} as ContextValue);
 
 export const useAppContext = () => useContext(AppContext);
 
 export const AppContextProvider = ({ children }: { children: ReactNode }) => {
-  if (
-    process.env.NEXT_PUBLIC_AUTH_GOOGLE_ONE_TAP_ENABLED === "true" &&
-    process.env.NEXT_PUBLIC_AUTH_GOOGLE_ID
-  ) {
-    useOneTapLogin();
-  }
+  // if (
+  //   process.env.NEXT_PUBLIC_AUTH_GOOGLE_ONE_TAP_ENABLED === "true" &&
+  //   process.env.NEXT_PUBLIC_AUTH_GOOGLE_ID
+  // ) {
+  //   useOneTapLogin();
+  // }
 
-  const { data: session } = useSession();
+  const { isSignedIn, user:User, isLoaded } = useUser()
+
+  // const { data: session } = useSession();
 
   const [theme, setTheme] = useState<string>(() => {
     return process.env.NEXT_PUBLIC_DEFAULT_THEME || "";
@@ -115,10 +119,10 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
   };
 
   useEffect(() => {
-    if (session && session.user) {
+    if (isSignedIn) {
       fetchUserInfo();
     }
-  }, [session]);
+  }, [isSignedIn]);
 
   return (
     <AppContext.Provider

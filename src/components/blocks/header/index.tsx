@@ -24,6 +24,15 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs'
+
 import { Header as HeaderType } from "@/types/blocks/header";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/navigation";
@@ -163,7 +172,21 @@ export default function Header({ header }: { header: HeaderType }) {
                 </Button>
               );
             })}
-            {header.show_sign && <SignToggle />}
+            <>
+            <SignedOut>
+              <SignInButton >
+                <Button>sign in</Button>
+              </SignInButton>
+              {/* <SignUpButton>
+                <button className="bg-[#6c47ff] text-white rounded-full font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 cursor-pointer">
+                  Sign Up
+                </button>
+              </SignUpButton> */}
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+            </>
           </div>
         </nav>
 
